@@ -1,0 +1,319 @@
+{
+  "datasets": [
+    {
+      "name": "12bd8573",
+      "displayName": "bronze_aws_carrinho",
+      "config": {
+        "version": "1.1",
+        "source": "workspace.default.bronze_aws_carrinho",
+        "dimensions": [
+          {
+            "name": "order_id",
+            "expr": "source.order_id",
+            "displayName": "Order Id"
+          },
+          {
+            "name": "order_date",
+            "expr": "source.order_date",
+            "displayName": "Order Date"
+          },
+          {
+            "name": "date_key",
+            "expr": "source.date_key",
+            "displayName": "Date Key"
+          },
+          {
+            "name": "contact_name",
+            "expr": "source.contact_name",
+            "displayName": "Contact Name"
+          },
+          {
+            "name": "country",
+            "expr": "source.country",
+            "displayName": "Country"
+          },
+          {
+            "name": "city",
+            "expr": "source.city",
+            "displayName": "City"
+          },
+          {
+            "name": "region",
+            "expr": "source.region",
+            "displayName": "Region"
+          },
+          {
+            "name": "subregion",
+            "expr": "source.subregion",
+            "displayName": "Subregion"
+          },
+          {
+            "name": "customer",
+            "expr": "source.customer",
+            "displayName": "Customer"
+          },
+          {
+            "name": "customer_id",
+            "expr": "source.customer_id",
+            "displayName": "Customer Id"
+          },
+          {
+            "name": "industry",
+            "expr": "source.industry",
+            "displayName": "Industry"
+          },
+          {
+            "name": "segment",
+            "expr": "source.segment",
+            "displayName": "Segment"
+          },
+          {
+            "name": "sales",
+            "expr": "source.sales",
+            "displayName": "Sales"
+          },
+          {
+            "name": "quantity",
+            "expr": "source.quantity",
+            "displayName": "Quantity"
+          },
+          {
+            "name": "profit",
+            "expr": "source.profit",
+            "displayName": "Profit"
+          },
+          {
+            "name": "cost",
+            "expr": "source.cost",
+            "displayName": "Cost"
+          },
+          {
+            "name": "product_cost",
+            "expr": "source.product_cost",
+            "displayName": "Product Cost"
+          },
+          {
+            "name": "profit_margin",
+            "expr": "source.profit_margin",
+            "displayName": "Profit Margin"
+          },
+          {
+            "name": "month",
+            "expr": "source.month",
+            "displayName": "Month"
+          }
+        ],
+        "measures": [
+          {
+            "name": "count",
+            "expr": "COUNT(*)",
+            "comment": "Represents the total number of rows in the dataset. Use this measure to count all",
+            "displayName": "Count"
+          }
+        ]
+      }
+    },
+    {
+      "name": "2477b1d4",
+      "displayName": "bronze_aws_customers",
+      "config": {
+        "version": "1.1",
+        "source": "workspace.default.bronze_aws_customers",
+        "dimensions": [
+          {
+            "name": "customer_id",
+            "expr": "source.customer_id",
+            "displayName": "Customer Id"
+          },
+          {
+            "name": "order_date",
+            "expr": "source.order_date",
+            "displayName": "Order Date"
+          },
+          {
+            "name": "customer",
+            "expr": "source.customer",
+            "displayName": "Customer"
+          },
+          {
+            "name": "country",
+            "expr": "source.country",
+            "displayName": "Country"
+          },
+          {
+            "name": "city",
+            "expr": "source.city",
+            "displayName": "City"
+          },
+          {
+            "name": "region",
+            "expr": "source.region",
+            "displayName": "Region"
+          },
+          {
+            "name": "subregion",
+            "expr": "source.subregion",
+            "displayName": "Subregion"
+          },
+          {
+            "name": "industry",
+            "expr": "source.industry",
+            "displayName": "Industry"
+          },
+          {
+            "name": "segment",
+            "expr": "source.segment",
+            "displayName": "Segment"
+          },
+          {
+            "name": "sales",
+            "expr": "source.sales",
+            "displayName": "Sales"
+          },
+          {
+            "name": "quantity",
+            "expr": "source.quantity",
+            "displayName": "Quantity"
+          },
+          {
+            "name": "profit",
+            "expr": "source.profit",
+            "displayName": "Profit"
+          },
+          {
+            "name": "customer_status",
+            "expr": "source.customer_status",
+            "displayName": "Customer Status"
+          },
+          {
+            "name": "month",
+            "expr": "source.month",
+            "displayName": "Month"
+          }
+        ],
+        "measures": [
+          {
+            "name": "count",
+            "expr": "COUNT(*)",
+            "comment": "Represents the total number of rows in the dataset. Use this measure to count all",
+            "displayName": "Count"
+          }
+        ]
+      }
+    },
+    {
+      "name": "cdade57c",
+      "displayName": "bronze_aws_metrics",
+      "config": {
+        "version": "1.1",
+        "source": "workspace.default.bronze_aws_metrics",
+        "dimensions": [
+          {
+            "name": "month",
+            "expr": "source.month",
+            "displayName": "Month"
+          },
+          {
+            "name": "total_carrinhos",
+            "expr": "source.total_carrinhos",
+            "displayName": "Total Carrinhos"
+          },
+          {
+            "name": "total_consumers",
+            "expr": "source.total_consumers",
+            "displayName": "Total Consumers"
+          },
+          {
+            "name": "total_sales",
+            "expr": "source.total_sales",
+            "displayName": "Total Sales"
+          },
+          {
+            "name": "ticket",
+            "expr": "source.ticket",
+            "displayName": "Ticket"
+          },
+          {
+            "name": "spending",
+            "expr": "source.spending",
+            "displayName": "Spending"
+          },
+          {
+            "name": "total_customers",
+            "expr": "source.total_customers",
+            "displayName": "Total Customers"
+          },
+          {
+            "name": "total_churn",
+            "expr": "source.total_churn",
+            "displayName": "Total Churn"
+          },
+          {
+            "name": "total_retention",
+            "expr": "source.total_retention",
+            "displayName": "Total Retention"
+          },
+          {
+            "name": "taxa_churn",
+            "expr": "source.taxa_churn",
+            "displayName": "Taxa Churn"
+          },
+          {
+            "name": "taxa_retencao",
+            "expr": "source.taxa_retencao",
+            "displayName": "Taxa Retencao"
+          }
+        ],
+        "measures": [
+          {
+            "name": "count",
+            "expr": "COUNT(*)",
+            "comment": "Represents the total number of rows in the dataset. Use this measure to count all",
+            "displayName": "Count"
+          }
+        ]
+      }
+    }
+  ],
+  "pages": [
+    {
+      "name": "04415fbf",
+      "displayName": "Untitled page",
+      "layout": [
+        {
+          "widget": {
+            "name": "29a25afe",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "12bd8573",
+                  "disaggregated": true
+                }
+              }
+            ],
+            "spec": {
+              "version": 3,
+              "widgetType": "bar",
+              "encodings": {}
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 0,
+            "width": 6,
+            "height": 6
+          }
+        }
+      ],
+      "pageType": "PAGE_TYPE_CANVAS",
+      "layoutVersion": "GRID_V1"
+    }
+  ],
+  "uiSettings": {
+    "theme": {
+      "widgetHeaderAlignment": "ALIGNMENT_UNSPECIFIED"
+    },
+    "applyModeEnabled": false
+  }
+}
