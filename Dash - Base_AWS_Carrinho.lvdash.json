@@ -1,0 +1,1251 @@
+{
+  "datasets": [
+    {
+      "name": "12bd8573",
+      "displayName": "bronze_aws_carrinho",
+      "config": {
+        "version": "1.1",
+        "source": "workspace.default.bronze_aws_carrinho",
+        "dimensions": [
+          {
+            "name": "order_id",
+            "expr": "source.order_id",
+            "displayName": "Order Id"
+          },
+          {
+            "name": "order_date",
+            "expr": "source.order_date",
+            "displayName": "Order Date"
+          },
+          {
+            "name": "date_key",
+            "expr": "source.date_key",
+            "displayName": "Date Key"
+          },
+          {
+            "name": "contact_name",
+            "expr": "source.contact_name",
+            "displayName": "Contact Name"
+          },
+          {
+            "name": "country",
+            "expr": "source.country",
+            "displayName": "Country"
+          },
+          {
+            "name": "city",
+            "expr": "source.city",
+            "displayName": "City"
+          },
+          {
+            "name": "region",
+            "expr": "source.region",
+            "displayName": "Region"
+          },
+          {
+            "name": "subregion",
+            "expr": "source.subregion",
+            "displayName": "Subregion"
+          },
+          {
+            "name": "customer",
+            "expr": "source.customer",
+            "displayName": "Customer"
+          },
+          {
+            "name": "customer_id",
+            "expr": "source.customer_id",
+            "displayName": "Customer Id"
+          },
+          {
+            "name": "industry",
+            "expr": "source.industry",
+            "displayName": "Industry"
+          },
+          {
+            "name": "segment",
+            "expr": "source.segment",
+            "displayName": "Segment"
+          },
+          {
+            "name": "sales",
+            "expr": "source.sales",
+            "displayName": "Sales"
+          },
+          {
+            "name": "quantity",
+            "expr": "source.quantity",
+            "displayName": "Quantity"
+          },
+          {
+            "name": "profit",
+            "expr": "source.profit",
+            "displayName": "Profit"
+          },
+          {
+            "name": "cost",
+            "expr": "source.cost",
+            "displayName": "Cost"
+          },
+          {
+            "name": "product_cost",
+            "expr": "source.product_cost",
+            "displayName": "Product Cost"
+          },
+          {
+            "name": "profit_margin",
+            "expr": "source.profit_margin",
+            "displayName": "Profit Margin"
+          },
+          {
+            "name": "month",
+            "expr": "source.month",
+            "displayName": "Month"
+          }
+        ],
+        "measures": [
+          {
+            "name": "count",
+            "expr": "COUNT(*)",
+            "comment": "Represents the total number of rows in the dataset. Use this measure to count all",
+            "displayName": "Count"
+          }
+        ]
+      }
+    },
+    {
+      "name": "2477b1d4",
+      "displayName": "bronze_aws_customers",
+      "config": {
+        "version": "1.1",
+        "source": "workspace.default.bronze_aws_customers",
+        "dimensions": [
+          {
+            "name": "customer_id",
+            "expr": "source.customer_id",
+            "displayName": "Customer Id"
+          },
+          {
+            "name": "order_date",
+            "expr": "source.order_date",
+            "displayName": "Order Date"
+          },
+          {
+            "name": "customer",
+            "expr": "source.customer",
+            "displayName": "Customer"
+          },
+          {
+            "name": "country",
+            "expr": "source.country",
+            "displayName": "Country"
+          },
+          {
+            "name": "city",
+            "expr": "source.city",
+            "displayName": "City"
+          },
+          {
+            "name": "region",
+            "expr": "source.region",
+            "displayName": "Region"
+          },
+          {
+            "name": "subregion",
+            "expr": "source.subregion",
+            "displayName": "Subregion"
+          },
+          {
+            "name": "industry",
+            "expr": "source.industry",
+            "displayName": "Industry"
+          },
+          {
+            "name": "segment",
+            "expr": "source.segment",
+            "displayName": "Segment"
+          },
+          {
+            "name": "sales",
+            "expr": "source.sales",
+            "displayName": "Sales"
+          },
+          {
+            "name": "quantity",
+            "expr": "source.quantity",
+            "displayName": "Quantity"
+          },
+          {
+            "name": "profit",
+            "expr": "source.profit",
+            "displayName": "Profit"
+          },
+          {
+            "name": "customer_status",
+            "expr": "source.customer_status",
+            "displayName": "Customer Status"
+          },
+          {
+            "name": "month",
+            "expr": "source.month",
+            "displayName": "Month"
+          }
+        ],
+        "measures": [
+          {
+            "name": "count",
+            "expr": "COUNT(*)",
+            "comment": "Represents the total number of rows in the dataset. Use this measure to count all",
+            "displayName": "Count"
+          }
+        ]
+      }
+    },
+    {
+      "name": "cdade57c",
+      "displayName": "bronze_aws_metrics",
+      "config": {
+        "version": "1.1",
+        "source": "workspace.default.bronze_aws_metrics",
+        "dimensions": [
+          {
+            "name": "month",
+            "expr": "source.month",
+            "displayName": "Month"
+          },
+          {
+            "name": "total_carrinhos",
+            "expr": "source.total_carrinhos",
+            "displayName": "Total Carrinhos"
+          },
+          {
+            "name": "total_consumers",
+            "expr": "source.total_consumers",
+            "displayName": "Total Consumers"
+          },
+          {
+            "name": "total_sales",
+            "expr": "source.total_sales",
+            "displayName": "Total Sales"
+          },
+          {
+            "name": "ticket",
+            "expr": "source.ticket",
+            "displayName": "Ticket"
+          },
+          {
+            "name": "spending",
+            "expr": "source.spending",
+            "displayName": "Spending"
+          },
+          {
+            "name": "total_customers",
+            "expr": "source.total_customers",
+            "displayName": "Total Customers"
+          },
+          {
+            "name": "total_churn",
+            "expr": "source.total_churn",
+            "displayName": "Total Churn"
+          },
+          {
+            "name": "total_retention",
+            "expr": "source.total_retention",
+            "displayName": "Total Retention"
+          },
+          {
+            "name": "taxa_churn",
+            "expr": "source.taxa_churn",
+            "displayName": "Taxa Churn"
+          },
+          {
+            "name": "taxa_retencao",
+            "expr": "source.taxa_retencao",
+            "displayName": "Taxa Retencao"
+          }
+        ],
+        "measures": [
+          {
+            "name": "count",
+            "expr": "COUNT(*)",
+            "comment": "Represents the total number of rows in the dataset. Use this measure to count all",
+            "displayName": "Count"
+          }
+        ]
+      }
+    }
+  ],
+  "pages": [
+    {
+      "name": "04415fbf",
+      "displayName": "Main",
+      "layout": [
+        {
+          "widget": {
+            "name": "m-edia",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "12bd8573",
+                  "fields": [
+                    {
+                      "name": "stddev(sales)",
+                      "expression": "STDDEV(`sales`)"
+                    },
+                    {
+                      "name": "avg(sales)",
+                      "expression": "AVG(`sales`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 2,
+              "frame": {
+                "showTitle": true,
+                "title": "Média valor total por carrinho"
+              },
+              "widgetType": "counter",
+              "encodings": {
+                "value": {
+                  "fieldName": "avg(sales)",
+                  "format": {
+                    "type": "number-currency",
+                    "currencyCode": "USD",
+                    "abbreviation": "compact",
+                    "decimalPlaces": {
+                      "type": "max",
+                      "places": 2
+                    }
+                  }
+                },
+                "target": {
+                  "fieldName": "stddev(sales)",
+                  "format": {
+                    "type": "number-currency",
+                    "currencyCode": "USD",
+                    "abbreviation": "compact",
+                    "decimalPlaces": {
+                      "type": "max",
+                      "places": 2
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 0,
+            "width": 3,
+            "height": 3
+          }
+        },
+        {
+          "widget": {
+            "name": "media-de-lucro",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "12bd8573",
+                  "fields": [
+                    {
+                      "name": "stddev(profit)",
+                      "expression": "STDDEV(`profit`)"
+                    },
+                    {
+                      "name": "avg(profit)",
+                      "expression": "AVG(`profit`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 2,
+              "frame": {
+                "showTitle": true,
+                "title": "Média de lucro por carrinho"
+              },
+              "widgetType": "counter",
+              "encodings": {
+                "value": {
+                  "fieldName": "avg(profit)",
+                  "format": {
+                    "type": "number-currency",
+                    "currencyCode": "USD",
+                    "abbreviation": "compact",
+                    "decimalPlaces": {
+                      "type": "max",
+                      "places": 2
+                    }
+                  }
+                },
+                "target": {
+                  "fieldName": "stddev(profit)",
+                  "format": {
+                    "type": "number-currency",
+                    "currencyCode": "USD",
+                    "abbreviation": "compact",
+                    "decimalPlaces": {
+                      "type": "max",
+                      "places": 2
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "position": {
+            "x": 6,
+            "y": 0,
+            "width": 3,
+            "height": 3
+          }
+        },
+        {
+          "widget": {
+            "name": "m1",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "12bd8573",
+                  "fields": [
+                    {
+                      "name": "stddev(quantity)",
+                      "expression": "STDDEV(`quantity`)"
+                    },
+                    {
+                      "name": "avg(quantity)",
+                      "expression": "AVG(`quantity`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 2,
+              "frame": {
+                "showTitle": true,
+                "title": "Média produtos por carrinho"
+              },
+              "widgetType": "counter",
+              "encodings": {
+                "value": {
+                  "fieldName": "avg(quantity)"
+                },
+                "target": {
+                  "fieldName": "stddev(quantity)"
+                }
+              }
+            }
+          },
+          "position": {
+            "x": 3,
+            "y": 0,
+            "width": 3,
+            "height": 3
+          }
+        },
+        {
+          "widget": {
+            "name": "media-de1",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "12bd8573",
+                  "fields": [
+                    {
+                      "name": "stddev(product_cost)",
+                      "expression": "STDDEV(`product_cost`)"
+                    },
+                    {
+                      "name": "avg(product_cost)",
+                      "expression": "AVG(`product_cost`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 2,
+              "frame": {
+                "showTitle": true,
+                "title": "Média de custo do produto"
+              },
+              "widgetType": "counter",
+              "encodings": {
+                "value": {
+                  "fieldName": "avg(product_cost)",
+                  "format": {
+                    "type": "number-currency",
+                    "currencyCode": "USD",
+                    "abbreviation": "compact",
+                    "decimalPlaces": {
+                      "type": "max",
+                      "places": 2
+                    }
+                  }
+                },
+                "target": {
+                  "fieldName": "stddev(product_cost)",
+                  "format": {
+                    "type": "number-currency",
+                    "currencyCode": "USD",
+                    "abbreviation": "compact",
+                    "decimalPlaces": {
+                      "type": "max",
+                      "places": 2
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "position": {
+            "x": 9,
+            "y": 0,
+            "width": 3,
+            "height": 3
+          }
+        },
+        {
+          "widget": {
+            "name": "soma-carrinho-po-r",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "12bd8573",
+                  "fields": [
+                    {
+                      "name": "region",
+                      "expression": "`region`"
+                    },
+                    {
+                      "name": "sum(sales)",
+                      "expression": "SUM(`sales`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 3,
+              "frame": {
+                "showTitle": true,
+                "title": "Soma de carrinho por região"
+              },
+              "widgetType": "bar",
+              "encodings": {
+                "x": {
+                  "fieldName": "region",
+                  "scale": {
+                    "type": "categorical"
+                  }
+                },
+                "y": {
+                  "fieldName": "sum(sales)",
+                  "format": {
+                    "type": "number-currency",
+                    "currencyCode": "USD",
+                    "abbreviation": "compact",
+                    "decimalPlaces": {
+                      "type": "max",
+                      "places": 2
+                    }
+                  },
+                  "scale": {
+                    "type": "quantitative"
+                  }
+                }
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 3,
+            "width": 6,
+            "height": 6
+          }
+        },
+        {
+          "widget": {
+            "name": "soma1",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "12bd8573",
+                  "fields": [
+                    {
+                      "name": "region",
+                      "expression": "`region`"
+                    },
+                    {
+                      "name": "sum(profit)",
+                      "expression": "SUM(`profit`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 3,
+              "frame": {
+                "showTitle": true,
+                "title": "Soma de lucro por região"
+              },
+              "widgetType": "bar",
+              "encodings": {
+                "x": {
+                  "fieldName": "region",
+                  "scale": {
+                    "type": "categorical"
+                  }
+                },
+                "y": {
+                  "fieldName": "sum(profit)",
+                  "format": {
+                    "type": "number-currency",
+                    "currencyCode": "USD",
+                    "abbreviation": "compact",
+                    "decimalPlaces": {
+                      "type": "max",
+                      "places": 2
+                    }
+                  },
+                  "scale": {
+                    "type": "quantitative"
+                  }
+                }
+              }
+            }
+          },
+          "position": {
+            "x": 6,
+            "y": 3,
+            "width": 6,
+            "height": 6
+          }
+        },
+        {
+          "widget": {
+            "name": "lucro-po",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "12bd8573",
+                  "fields": [
+                    {
+                      "name": "subregion",
+                      "expression": "`subregion`"
+                    },
+                    {
+                      "name": "sum(profit)",
+                      "expression": "SUM(`profit`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 3,
+              "frame": {
+                "showTitle": true,
+                "title": "Lucro por sub-região"
+              },
+              "widgetType": "bar",
+              "encodings": {
+                "x": {
+                  "fieldName": "subregion",
+                  "scale": {
+                    "type": "categorical"
+                  }
+                },
+                "y": {
+                  "fieldName": "sum(profit)",
+                  "format": {
+                    "type": "number-currency",
+                    "currencyCode": "USD",
+                    "abbreviation": "compact",
+                    "decimalPlaces": {
+                      "type": "max",
+                      "places": 2
+                    }
+                  },
+                  "scale": {
+                    "type": "quantitative"
+                  }
+                }
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 9,
+            "width": 12,
+            "height": 6
+          }
+        },
+        {
+          "widget": {
+            "name": "9e6858b8",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "12bd8573",
+                  "fields": [
+                    {
+                      "name": "subregion",
+                      "expression": "`subregion`"
+                    },
+                    {
+                      "name": "avg(sales)",
+                      "expression": "AVG(`sales`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 3,
+              "frame": {
+                "showTitle": true,
+                "title": "Média de carrinho por sub-região"
+              },
+              "widgetType": "bar",
+              "encodings": {
+                "x": {
+                  "fieldName": "subregion",
+                  "scale": {
+                    "type": "categorical"
+                  }
+                },
+                "y": {
+                  "fieldName": "avg(sales)",
+                  "format": {
+                    "type": "number-currency",
+                    "currencyCode": "USD",
+                    "abbreviation": "compact",
+                    "decimalPlaces": {
+                      "type": "max",
+                      "places": 2
+                    }
+                  },
+                  "scale": {
+                    "type": "quantitative"
+                  }
+                }
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 15,
+            "width": 12,
+            "height": 6
+          }
+        },
+        {
+          "widget": {
+            "name": "vendas-por-data",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "12bd8573",
+                  "fields": [
+                    {
+                      "name": "monthly(order_date)",
+                      "expression": "DATE_TRUNC(\"MONTH\", `order_date`)"
+                    },
+                    {
+                      "name": "sum(sales)",
+                      "expression": "SUM(`sales`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 3,
+              "frame": {
+                "showTitle": true,
+                "title": "Vendas por data"
+              },
+              "widgetType": "line",
+              "encodings": {
+                "x": {
+                  "fieldName": "monthly(order_date)",
+                  "scale": {
+                    "type": "temporal"
+                  }
+                },
+                "y": {
+                  "fieldName": "sum(sales)",
+                  "format": {
+                    "type": "number-currency",
+                    "currencyCode": "USD",
+                    "abbreviation": "compact",
+                    "decimalPlaces": {
+                      "type": "max",
+                      "places": 2
+                    }
+                  },
+                  "scale": {
+                    "type": "quantitative"
+                  }
+                }
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 21,
+            "width": 12,
+            "height": 7
+          }
+        },
+        {
+          "widget": {
+            "name": "lucro-por-data-1",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "12bd8573",
+                  "fields": [
+                    {
+                      "name": "monthly(order_date)",
+                      "expression": "DATE_TRUNC(\"MONTH\", `order_date`)"
+                    },
+                    {
+                      "name": "sum(profit)",
+                      "expression": "SUM(`profit`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 3,
+              "frame": {
+                "showTitle": true,
+                "title": "Lucro por data"
+              },
+              "widgetType": "line",
+              "encodings": {
+                "x": {
+                  "fieldName": "monthly(order_date)",
+                  "scale": {
+                    "type": "temporal"
+                  }
+                },
+                "y": {
+                  "fieldName": "sum(profit)",
+                  "format": {
+                    "type": "number-currency",
+                    "currencyCode": "USD",
+                    "abbreviation": "compact",
+                    "decimalPlaces": {
+                      "type": "max",
+                      "places": 2
+                    }
+                  },
+                  "scale": {
+                    "type": "quantitative"
+                  }
+                }
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 28,
+            "width": 12,
+            "height": 7
+          }
+        },
+        {
+          "widget": {
+            "name": "p1",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "12bd8573",
+                  "fields": [
+                    {
+                      "name": "sum(quantity)",
+                      "expression": "SUM(`quantity`)"
+                    },
+                    {
+                      "name": "segment",
+                      "expression": "`segment`"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 3,
+              "frame": {
+                "showTitle": true,
+                "title": "Quantidade de produtos comprados por segmento"
+              },
+              "widgetType": "pie",
+              "encodings": {
+                "angle": {
+                  "fieldName": "sum(quantity)",
+                  "scale": {
+                    "type": "quantitative"
+                  }
+                },
+                "color": {
+                  "fieldName": "segment",
+                  "scale": {
+                    "type": "categorical"
+                  }
+                }
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 35,
+            "width": 6,
+            "height": 6
+          }
+        },
+        {
+          "widget": {
+            "name": "top-5-clientes-ck",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "12bd8573",
+                  "fields": [
+                    {
+                      "name": "sum(sales)",
+                      "expression": "SUM(`sales`)"
+                    },
+                    {
+                      "name": "customer",
+                      "expression": "`customer`"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 3,
+              "frame": {
+                "showTitle": true,
+                "title": "Top 5 clientes com mais gastos"
+              },
+              "widgetType": "bar",
+              "encodings": {
+                "x": {
+                  "fieldName": "sum(sales)",
+                  "format": {
+                    "type": "number-currency",
+                    "currencyCode": "USD",
+                    "abbreviation": "compact",
+                    "decimalPlaces": {
+                      "type": "max",
+                      "places": 2
+                    }
+                  },
+                  "scale": {
+                    "type": "quantitative"
+                  }
+                },
+                "y": {
+                  "fieldName": "customer",
+                  "scale": {
+                    "type": "categorical",
+                    "categorySize": {
+                      "type": "number-of-categories",
+                      "number": 5
+                    },
+                    "sort": {
+                      "by": "custom-order",
+                      "orderedValues": [
+                        "Anthem",
+                        "Ford Motor",
+                        "Allianz",
+                        "Bank of America Corp.",
+                        "Valero Energy",
+                        "Lowes",
+                        "Tyson Foods",
+                        "Allstate",
+                        "AmerisourceBergen",
+                        "BMW",
+                        "BNP Paribas",
+                        "Siemens",
+                        "UnitedHealth Group",
+                        "Volkswagen",
+                        "Lukoil",
+                        "Chevron",
+                        "American Express",
+                        "Trafigura Group",
+                        "Mondelez International",
+                        "ConocoPhillips",
+                        "PepsiCo",
+                        "Itochu",
+                        "Airbus",
+                        "Kroger",
+                        "Johnson & Johnson",
+                        "Walt Disney",
+                        "AT&T",
+                        "Coca-Cola",
+                        "Morgan Stanley",
+                        "Phillips 66",
+                        "Aetna",
+                        "Intel",
+                        "Fannie Mae",
+                        "Comcast",
+                        "Bosch",
+                        "Toyota Motor",
+                        "Royal Dutch Shell",
+                        "Humana",
+                        "FedEx",
+                        "Home Depot",
+                        "Samsung Electronics",
+                        "CVS Health",
+                        "United Parcel Service",
+                        "Nestle",
+                        "Amazon",
+                        "Wells Fargo",
+                        "Apple",
+                        "Sony",
+                        "HSBC Holdings",
+                        "Nissan Motor",
+                        "Costco Wholesale",
+                        "Walmart",
+                        "Philip Morris International",
+                        "Honda Motor",
+                        "Oracle",
+                        "Prudential Financial",
+                        "Caterpillar",
+                        "China National Petroleum",
+                        "State Farm Insurance Cos.",
+                        "Engie",
+                        "Cisco Systems",
+                        "Daimler",
+                        "Pfizer",
+                        "Sysco",
+                        "Sprint Nextel",
+                        "HonHai Precision Industry",
+                        "Merck",
+                        "Verizon Communications",
+                        "Marathon Petroleum",
+                        "Carrefour",
+                        "Mitsubishi",
+                        "Alphabet",
+                        "Panasonic",
+                        "Target",
+                        "Glencore",
+                        "J.P. Morgan Chase & Co.",
+                        "Aviva",
+                        "McKesson",
+                        "Walgreens",
+                        "Boeing",
+                        "Microsoft",
+                        "News Corp.",
+                        "Huawei",
+                        "Pemex",
+                        "General Motors",
+                        "Enel",
+                        "Abbott Laboratories",
+                        "Procter & Gamble",
+                        "Cigna",
+                        "Banco Santander",
+                        "Goldman Sachs Group",
+                        "Exxon Mobil",
+                        "Petrobras",
+                        "General Electric",
+                        "Tesco",
+                        "Berkshire Hathaway",
+                        "Safeway",
+                        "Citigroup",
+                        "Gazprom"
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "position": {
+            "x": 6,
+            "y": 35,
+            "width": 6,
+            "height": 6
+          }
+        },
+        {
+          "widget": {
+            "name": "heat",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "12bd8573",
+                  "fields": [
+                    {
+                      "name": "sum(sales)",
+                      "expression": "SUM(`sales`)"
+                    },
+                    {
+                      "name": "country",
+                      "expression": "`country`"
+                    },
+                    {
+                      "name": "monthly(month)",
+                      "expression": "DATE_TRUNC(\"MONTH\", `month`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 3,
+              "frame": {
+                "showTitle": true,
+                "title": "Heatmap de pais por mês"
+              },
+              "widgetType": "heatmap",
+              "encodings": {
+                "x": {
+                  "fieldName": "country",
+                  "scale": {
+                    "type": "categorical"
+                  }
+                },
+                "y": {
+                  "fieldName": "monthly(month)",
+                  "scale": {
+                    "type": "temporal"
+                  }
+                },
+                "color": {
+                  "fieldName": "sum(sales)",
+                  "scale": {
+                    "type": "quantitative"
+                  }
+                }
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 41,
+            "width": 12,
+            "height": 8
+          }
+        },
+        {
+          "widget": {
+            "name": "09f6c42f",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "12bd8573",
+                  "fields": [
+                    {
+                      "name": "sum(profit)",
+                      "expression": "SUM(`profit`)"
+                    },
+                    {
+                      "name": "country",
+                      "expression": "`country`"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 1,
+              "mapProjection": {
+                "type": "mercator"
+              },
+              "frame": {
+                "showTitle": true,
+                "title": "Choropleth Map do lucro de cada pais"
+              },
+              "widgetType": "choropleth-map",
+              "encodings": {
+                "color": {
+                  "fieldName": "sum(profit)",
+                  "format": {
+                    "type": "number-currency",
+                    "currencyCode": "USD",
+                    "abbreviation": "compact",
+                    "decimalPlaces": {
+                      "type": "max",
+                      "places": 2
+                    }
+                  },
+                  "scale": {
+                    "type": "quantitative",
+                    "colorRamp": {
+                      "mode": "scheme",
+                      "scheme": "blues"
+                    }
+                  }
+                },
+                "region": {
+                  "regionType": "mapbox-v4-admin",
+                  "admin0": {
+                    "fieldName": "country",
+                    "type": "field",
+                    "geographicRole": "admin0-name"
+                  }
+                }
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 49,
+            "width": 12,
+            "height": 7
+          }
+        }
+      ],
+      "pageType": "PAGE_TYPE_CANVAS",
+      "layoutVersion": "GRID_V1"
+    }
+  ],
+  "uiSettings": {
+    "theme": {
+      "widgetHeaderAlignment": "ALIGNMENT_UNSPECIFIED"
+    },
+    "applyModeEnabled": false
+  }
+}
